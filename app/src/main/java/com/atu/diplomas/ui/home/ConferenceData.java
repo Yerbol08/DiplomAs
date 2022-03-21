@@ -20,8 +20,9 @@ public class ConferenceData {
         this.formaConf = formaConf;
         this.organizatorConf = organizatorConf;
         this.textConf = textConf;
+
     }
-    public ConferenceData(Map<String, Object> data){}
+    public ConferenceData(){}
 
     public String getTextConf() {
         return textConf;

@@ -14,10 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DiplomAsNoActionBar">
         <activity
+            android:name=".ui.home.ConferenceActivity"
+            android:exported="false" />
+        <activity
             android:name=".LaunchActivity"
             android:exported="true"
-            android:theme="@style/Theme.DiplomAs"
-            android:label="@string/title_activity_launch" >
+            android:label="@string/title_activity_launch"
+            android:theme="@style/Theme.DiplomAs">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,9 +39,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.DiplomAs">
-
-        </activity>
+            android:theme="@style/Theme.DiplomAs"></activity>
     </application>
 
 </manifest>
