@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">IConference</string>
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full name</string>
+    <string name="email_address">Email</string>
+    <string name="sign_up">SingUp</string>
+    <string name="i_m_already_a_member">I am already a member</string>
+    <string name="sign_in">Sing In</string>
+    <string name="i_am_a_new_user">I am a new user</string>
+    <string name="best_way_to_invest_your_money">Best way to invest Your Money</string>
+    <string name="sign_up_using_email_and_password">Sing Up using Email</string>
+    <string name="sign_in_using_email_and_password">Sing In using Email</string>
+    <string name="list">Conferencees</string>
+    <string name="add_conference">add conference</string>
+    <string name="message">Message</string>
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="title_home">Конференции</string>
+    <string name="title_dashboard">Добавить конференцию</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="conferences">Конференции</string>
+    <string name="AddConference">Добавить конференцию</string>
+</resources>

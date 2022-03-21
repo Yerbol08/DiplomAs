@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "19323108634",
+    "project_id": "diplomasyl",
+    "storage_bucket": "diplomasyl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19323108634:android:0dddf53818c2fa5782c0a3",
+        "android_client_info": {
+          "package_name": "com.atu.diplomas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19323108634-tlie85n2htqr5kaikhd3ikc7t5dvsohu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrBkrWY4P0EzBwz2RsB4rQQC8pdvv_kBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19323108634-tlie85n2htqr5kaikhd3ikc7t5dvsohu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

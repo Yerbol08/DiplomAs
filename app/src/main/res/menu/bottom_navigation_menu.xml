@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_1"
+        android:icon="@drawable/conference_list"
+        android:title="@string/list"/>
+    <item
+        android:id="@+id/page_2"
+        android:icon="@drawable/add_conference"
+        android:title="@string/add_conference"/>
+    <item
+        android:id="@+id/page_3"
+        android:icon="@drawable/message_icon"
+        android:title="@string/message"/>
+</menu>
