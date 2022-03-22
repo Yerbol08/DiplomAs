@@ -97,11 +97,8 @@ public class DashboardFragment extends Fragment {
     }
 
     public void addDateFireStore(String name, String dateConf, String location, String formaConf, String language, String organizer, String textCoonf){
-
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         CollectionReference dbConference = db.collection("Conferences");
-
-
         ConferenceData data = new ConferenceData(name, dateConf,location, formaConf, language, organizer, textCoonf);
         dbConference.add(data).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
@@ -119,8 +116,7 @@ public class DashboardFragment extends Fragment {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toasty.error(getContext(), "Fail to add course \n" + e,
-                        Toast.LENGTH_SHORT, true).show();
+                Toasty.error(getContext(), "Fail to add course \n" + e,Toast.LENGTH_SHORT, true).show();
             }
         });
     }

@@ -38,7 +38,6 @@ public class ConferenceAdapter extends RecyclerView.Adapter<ConferenceAdapter.Vi
         holder.NameTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), data.getNameConf(), Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(view.getContext(), ConferenceActivity.class);
                 intent.putExtra("name", data.getNameConf());
                 intent.putExtra("date", data.getDateConf());

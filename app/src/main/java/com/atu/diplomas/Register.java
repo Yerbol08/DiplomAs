@@ -62,14 +62,7 @@ public class Register extends AppCompatActivity {
         userName = findViewById(R.id.regName);
         loadingProgress = findViewById(R.id.regProgressBar);
         regBtn = findViewById(R.id.regBtn);
-//        signBtn = findViewById(R.id.sigBtn);
-//        signBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(EmailAndPasswordRegisterActivity.this, MainActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+
 
         loadingProgress.setVisibility(View.INVISIBLE);
 
@@ -126,8 +119,6 @@ public class Register extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-
-                            // user account created successfully
                             showMessage("Account created");
                             userID = mAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fStore.collection("user_profile").document(userID);
@@ -136,7 +127,6 @@ public class Register extends AppCompatActivity {
                             user.put("Email", email);
                             user.put("Password", password);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     Log.d(TAG, "onSuccess: user Profile is created for " + userID);
@@ -147,23 +137,18 @@ public class Register extends AppCompatActivity {
                                     Log.d(TAG, "onFailure: " + e.toString());
                                 }
                             });
-                            // after we created user account we need to update his profile picture and name
-                            //check user photo is picked or not
                             if (pickedImgUri != null){
                                 updateUserInfo(name, pickedImgUri, mAuth.getCurrentUser());
-
                             }
                             else {
                                 updateUserInfoWithoutPhoto(name,mAuth.getCurrentUser());
                             }
-
                         } else {
 
                             // account creation failed
                             showMessage("account creation failed" + task.getException().getMessage());
                             regBtn.setVisibility(View.VISIBLE);
                             loadingProgress.setVisibility(View.INVISIBLE);
-
                         }
                     }
                 });
