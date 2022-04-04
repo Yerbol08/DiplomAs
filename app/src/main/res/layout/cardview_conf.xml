@@ -36,7 +36,6 @@
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:text="CourseName"
-                android:textColor="@color/purple_500"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -47,7 +46,6 @@
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:text="Duration"
-                android:textColor="@color/black"
                />
 
             <!--Textview for displaying our Course Description-->
@@ -57,8 +55,7 @@
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:text="Description"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
